@@ -69,10 +69,10 @@ p {
 
     & > .contacts {
         justify-content: center;
-        margin: 1.5rem 0;
+        margin: 1rem 0;
         div {
+            margin: 0.5rem 1rem;
             display: flex;
-            margin: 0 1rem;
 
             span {
                 color: $secondary;
@@ -85,6 +85,17 @@ p {
         width: 50%;
         margin: auto;
         font-size: 16px;
+    }
+
+    @media all and (max-width:900px) {
+        .aboutText{
+            width: 80%;
+        }
+    }
+    @media all and (max-width:600px) {
+        .aboutText{
+            width: 100%;
+        }
     }
 }
 
@@ -136,9 +147,11 @@ p {
                 width: 180px;
             }
             h2{
+                margin: 0.5rem;
                 font-size: 22px;
             }
             p{
+                margin: 0.5rem;
                 font-size: 16px;
             }
         }

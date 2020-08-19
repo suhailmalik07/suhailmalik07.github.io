@@ -62,11 +62,11 @@ p {
 }
 .info > .contacts {
   justify-content: center;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 .info > .contacts div {
+  margin: 0.5rem 1rem;
   display: flex;
-  margin: 0 1rem;
 }
 .info > .contacts div span {
   color: #ffc831;
@@ -76,6 +76,16 @@ p {
   width: 50%;
   margin: auto;
   font-size: 16px;
+}
+@media all and (max-width: 900px) {
+  .info .aboutText {
+    width: 80%;
+  }
+}
+@media all and (max-width: 600px) {
+  .info .aboutText {
+    width: 100%;
+  }
 }
 
 .languagesContainer {
@@ -122,9 +132,11 @@ p {
   width: 180px;
 }
 .proficiencyCont > .cards > .card h2 {
+  margin: 0.5rem;
   font-size: 22px;
 }
 .proficiencyCont > .cards > .card p {
+  margin: 0.5rem;
   font-size: 16px;
 }
 
