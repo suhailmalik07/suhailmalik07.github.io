@@ -27,15 +27,27 @@ p {
   padding: 1rem;
 }
 .info .imgContainer {
-  margin: 1rem 0;
+  margin: 1rem auto;
+  width: 160px;
+  position: relative;
 }
 .info .imgContainer img {
-  width: 160px;
+  width: 100%;
   border-radius: 50%;
-  border: 10px solid #88B9D7;
+  border: 10px solid #88b9d7;
+}
+.info .imgContainer:after {
+  position: absolute;
+  bottom: 7%;
+  right: -14%;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3c5e9b;
 }
 .info .nameContainer h1 {
-  color: #3C5E9B;
+  color: #3c5e9b;
   margin: 0.5rem 0;
 }
 .info .nameContainer p {
@@ -50,7 +62,7 @@ p {
   margin: 0 1rem;
 }
 .info .contacts div span {
-  color: #FFC831;
+  color: #ffc831;
   margin-right: 0.5rem;
 }
 .info .aboutText {

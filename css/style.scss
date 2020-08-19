@@ -1,67 +1,79 @@
-$primaryColor: #3C5E9B;
-$secondary: #FFC831;
+$primaryColor: #3c5e9b;
+$secondary: #ffc831;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
-h1{
+h1 {
     font-size: 32px;
 }
 
-p{
+p {
     font-size: 18px;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.info{
+.info {
     padding: 1rem;
-    .imgContainer{
-        margin: 1rem 0;
-        img{
-            width: 160px;
+    .imgContainer {
+        margin: 1rem auto;
+        width: 160px;
+        position: relative;
+        img {
+            width: 100%;
             border-radius: 50%;
-            border: 10px solid #88B9D7;
+            border: 10px solid #88b9d7;
         }
+    }
+    .imgContainer:after {
+        position: absolute;
+        bottom: 7%;
+        right: -14%;
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $primaryColor;
     }
 
     .nameContainer {
-        h1{
+        h1 {
             color: $primaryColor;
             margin: 0.5rem 0;
         }
-        p{
+        p {
             margin: 0.5rem 0;
         }
     }
 
-    .contacts{
+    .contacts {
         justify-content: center;
         margin: 1.5rem 0;
-        div{
+        div {
             display: flex;
             margin: 0 1rem;
 
-            span{
+            span {
                 color: $secondary;
                 margin-right: 0.5rem;
             }
         }
     }
 
-    .aboutText{
+    .aboutText {
         width: 50%;
         margin: auto;
         font-size: 16px;
