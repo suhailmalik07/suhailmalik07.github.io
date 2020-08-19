@@ -24,20 +24,25 @@ p {
   flex-wrap: wrap;
 }
 
+.shadow {
+  box-shadow: 0px 10px 10px 5px #ddd;
+}
+
 .info {
   padding: 1rem;
 }
-.info .imgContainer {
+.info > .imgContainer {
   margin: 1rem auto;
-  width: 160px;
+  width: 200px;
   position: relative;
 }
-.info .imgContainer img {
+.info > .imgContainer > img {
   width: 100%;
   border-radius: 50%;
   border: 10px solid #88b9d7;
+  box-shadow: 1px 1px 10px 5px #ddd;
 }
-.info .imgContainer:after {
+.info > .imgContainer:after {
   position: absolute;
   bottom: 7%;
   right: -14%;
@@ -45,35 +50,38 @@ p {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #3c5e9b;
+  background-color: #88b9d7;
+  box-shadow: 0px 10px 10px 5px #ddd;
 }
-.info .nameContainer h1 {
+.info > .nameContainer h1 {
   color: #3c5e9b;
   margin: 0.5rem 0;
 }
-.info .nameContainer p {
+.info > .nameContainer p {
   margin: 0.5rem 0;
 }
-.info .contacts {
+.info > .contacts {
   justify-content: center;
   margin: 1.5rem 0;
 }
-.info .contacts div {
+.info > .contacts div {
   display: flex;
   margin: 0 1rem;
 }
-.info .contacts div span {
+.info > .contacts div span {
   color: #ffc831;
   margin-right: 0.5rem;
 }
-.info .aboutText {
+.info > .aboutText {
   width: 50%;
   margin: auto;
   font-size: 16px;
 }
 
 .languagesContainer {
-  margin-top: 2rem;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
 }
 .languagesContainer div {
   width: 80px;
@@ -82,8 +90,11 @@ p {
   margin: 1rem;
   padding: 0.7rem;
 }
+.languagesContainer div {
+  box-shadow: 1px 1px 10px 5px #ccc;
+}
 .languagesContainer div:nth-child(2n) {
-  background-color: #88B9D7;
+  background-color: #88b9d7;
 }
 .languagesContainer div:nth-child(2n+1) {
   background-color: #3c5e9b;
@@ -92,6 +103,29 @@ p {
   filter: invert(100%);
   width: 100%;
   height: 100%;
+}
+
+.proficiencyCont {
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  color: #707070;
+}
+.proficiencyCont > h1 {
+  font-size: 38px;
+}
+.proficiencyCont > .cards > .card {
+  margin: 1rem 1.5rem;
+  flex: 1;
+}
+.proficiencyCont > .cards > .card img {
+  width: 180px;
+}
+.proficiencyCont > .cards > .card h2 {
+  font-size: 22px;
+}
+.proficiencyCont > .cards > .card p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
