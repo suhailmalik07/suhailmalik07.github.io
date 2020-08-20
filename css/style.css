@@ -58,6 +58,8 @@ p {
   margin: 0.5rem 0;
 }
 .info > .nameContainer p {
+  font-size: 19px;
+  color: #707070;
   margin: 0.5rem 0;
 }
 .info > .contacts {
@@ -66,9 +68,11 @@ p {
 }
 .info > .contacts div {
   margin: 0.5rem 1rem;
+  font-size: 18px;
   display: flex;
+  color: "#A8A8A8";
 }
-.info > .contacts div span {
+.info > .contacts div > span {
   color: #ffc831;
   margin-right: 0.5rem;
 }
