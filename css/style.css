@@ -51,7 +51,7 @@ p {
   height: 30px;
   border-radius: 50%;
   background-color: #88b9d7;
-  box-shadow: 0px 10px 10px 5px #ddd;
+  box-shadow: 0px 2px 5px 1px #ddd;
 }
 .info > .nameContainer h1 {
   color: #3c5e9b;
@@ -105,7 +105,7 @@ p {
   padding: 0.7rem;
 }
 .languagesContainer div {
-  box-shadow: 1px 1px 10px 5px #ccc;
+  box-shadow: 1px 1px 5px 1px #eee;
 }
 .languagesContainer div:nth-child(2n) {
   background-color: #88b9d7;

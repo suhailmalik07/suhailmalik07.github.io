@@ -54,7 +54,7 @@ p {
         height: 30px;
         border-radius: 50%;
         background-color: $primaryLightColor;
-        box-shadow: 0px 10px 10px 5px #ddd;
+        box-shadow: 0px 2px 5px 1px #ddd;
     }
 
     & > .nameContainer {
@@ -115,7 +115,7 @@ p {
     }
 
     div {
-        box-shadow: 1px 1px 10px 5px #ccc;
+        box-shadow: 1px 1px 5px 1px #eee;
     }
 
     div:nth-child(2n) {
