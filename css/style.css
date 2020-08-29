@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 38px;
 }
 
 p {
@@ -20,7 +20,6 @@ p {
 .flex {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -142,6 +141,46 @@ p {
 .proficiencyCont > .cards > .card p {
   margin: 0.5rem;
   font-size: 16px;
+}
+
+.projects {
+  background-color: #f4f4f4;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+.projects > .cards {
+  justify-content: space-evenly;
+}
+.projects > .cards > .card {
+  background-color: white;
+  width: 30%;
+  margin: 2rem 1rem;
+  margin-bottom: 4rem;
+  width: 300px;
+  transition: box-shadow 0.6s cubic-bezier(0.43, 0.195, 0.02, 1);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.03), -1px 1px 0 rgba(0, 0, 0, 0.03), 1px -1px 0 rgba(0, 0, 0, 0.03), -1px -1px 0 rgba(0, 0, 0, 0.03);
+}
+.projects > .cards > .card:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.05), 0 8px 12px rgba(0, 0, 0, 0.05), 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+.projects > .cards > .card img {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.projects > .cards > .card > .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+  padding-top: 1rem;
+}
+.projects > .cards > .card > .card-body .title {
+  justify-self: flex-start;
+}
+.projects > .cards > .card > .card-body .links {
+  text-align: left;
+  margin: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
