@@ -13,6 +13,9 @@
 
     <!-- Material.io/icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Github Calender css -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 </head>
 
 <body>
@@ -57,7 +60,7 @@
                     alt="twitter"></a>
             <a href="https://www.hackerrank.com/suhailmalik07"><img
                     src="https://www.bing.com/th?id=AMMS_522d4f4f46b824cfd6975ec254024daa&w=110&h=110&c=7&rs=1&qlt=95&pcl=f9f9f9&cdv=1&pid=16.1"
-                    style="width: 35px;" alt="Hackerrank"></a>
+                    style="width: 45px;" alt="Hackerrank"></a>
         </div>
 
         <p class="aboutText">
@@ -66,68 +69,78 @@
         </p>
     </div>
 
-    <div class="languagesContainer flex">
-        <div>
-            <img src="https://cdn.svgporn.com/logos/python.svg" alt="python.png">
-            <p>Python</p>
+    <div class="knowledge">
+
+        <div class="languagesContainer">
+            <h1>Tech Stack</h1>
+
+            <div class="icons flex">
+                <div>
+                    <img src="https://cdn.svgporn.com/logos/python.svg" alt="python.png">
+                    <p>Python</p>
+                </div>
+                <div>
+                    <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="HTML.png">
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="bootstrap.png">
+                    <p>Bootstrap</p>
+                </div>
+                <div>
+                    <img src="https://cdn.svgporn.com/logos/nodejs-icon.svg" alt="javascript.png">
+                    <p>Javascript</p>
+                </div>
+                <div>
+                    <img src="https://cdn.svgporn.com/logos/nodejs.svg" alt="node.js">
+                    <p>Node.js</p>
+                </div>
+                <div>
+                    <img src="https://cdn.svgporn.com/logos/react.svg" alt="react.png">
+                    <p>React.js</p>
+                </div>
+                <div>
+                    <img src="https://cdn.svgporn.com/logos/css-3_official.svg" alt="css.png">
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <img src="https://cdn.svgporn.com/logos/git-icon.svg" alt="git.png">
+                    <p>Git</p>
+                </div>
+
+            </div>
         </div>
-        <div>
-            <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="HTML.png">
-            <p>HTML</p>
+
+        <div class="proficiencyCont flex">
+
+            <h1>Proficiency</h1>
+
+            <div class="cards flex">
+                <div class="card">
+                    <img src="static/proficiencyIcons/icon1.png" alt="">
+                    <h2>Frontend</h2>
+                    <p>Now just that I can even host the show</p>
+                </div>
+                <div class="card">
+                    <img src="static/proficiencyIcons/icon2.png" alt="">
+                    <h2>Backend</h2>
+                    <p>I'm the one who runs the <br /> show</p>
+                </div>
+                <div class="card">
+                    <img src="static/proficiencyIcons/icon3.png" alt="">
+                    <h2>React Apps</h2>
+                    <p>When it comes to react app I've strength of atlas</p>
+                </div>
+                <div class="card">
+                    <img src="static/proficiencyIcons/icon4.png" alt="">
+                    <h2>Data Structures</h2>
+                    <p>Putting the right blocks in the right place just my things</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="bootstrap.png">
-            <p>Bootstrap</p>
-        </div>
-        <div>
-            <img src="https://cdn.svgporn.com/logos/nodejs-icon.svg" alt="javascript.png">
-            <p>Javascript</p>
-        </div>
-        <div>
-            <img src="https://cdn.svgporn.com/logos/nodejs.svg" alt="node.js">
-            <p>Node.js</p>
-        </div>
-        <div>
-            <img src="https://cdn.svgporn.com/logos/react.svg" alt="react.png">
-            <p>React.js</p>
-        </div>
-        <div>
-            <img src="https://cdn.svgporn.com/logos/css-3_official.svg" alt="css.png">
-            <p>CSS</p>
-        </div>
-        <div>
-            <img src="https://cdn.svgporn.com/logos/git-icon.svg" alt="git.png">
-            <p>Git</p>
-        </div>
+
     </div>
 
-    <div class="proficiencyCont flex">
-
-        <h1>Proficiency</h1>
-
-        <div class="cards flex">
-            <div class="card">
-                <img src="static/proficiencyIcons/icon1.png" alt="">
-                <h2>Frontend</h2>
-                <p>Now just that I can even host the show</p>
-            </div>
-            <div class="card">
-                <img src="static/proficiencyIcons/icon2.png" alt="">
-                <h2>Backend</h2>
-                <p>I'm the one who runs the <br /> show</p>
-            </div>
-            <div class="card">
-                <img src="static/proficiencyIcons/icon3.png" alt="">
-                <h2>React Apps</h2>
-                <p>When it comes to react app I've strength of atlas</p>
-            </div>
-            <div class="card">
-                <img src="static/proficiencyIcons/icon4.png" alt="">
-                <h2>Data Structures</h2>
-                <p>Putting the right blocks in the right place just my things</p>
-            </div>
-        </div>
-    </div>
 
     <div class="projects flex">
         <h1>Projects</h1>
@@ -166,7 +179,7 @@
                 </div>
                 <div class="card-body">
                     <h3 class="title">Chess</h3>
-                    <p> Chess Game having compatibility for multiplayer</p>
+                    <p> Chess Game having compatibility for two players. </p>
 
                     <div class="links flex">
                         <p>
@@ -205,17 +218,62 @@
                     </div>
 
                     <div class="links flex">
+                        <img src="https://cdn.svgporn.com/logos/react.svg" alt="React.png">
+                        <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="javascript.png">
+                        <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="react-router.png">
                         <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="Html.png">
                         <img src="https://cdn.svgporn.com/logos/css-3.svg" alt="css.png">
-                        <img src="https://cdn.svgporn.com/logos/react.svg" alt="React.png">
-                        <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="react-router.png">
-                        <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="javascript.png">
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <div class="coding-data flex">
+        <div>
+            <div class="circle flex">
+                1200+
+            </div>
+            <h2>Hours of Coding</h2>
+        </div>
+
+        <div>
+            <div class="circle flex">
+                370+
+            </div>
+            <h2>Hackerrank Problems</h2>
+        </div>
+
+        <div>
+            <div class="circle flex">
+                500+
+            </div>
+            <h2>Git Commits</h2>
+        </div>
+
+        <div>
+            <div class="circle flex">
+                12+
+            </div>
+            <h2>Projects</h2>
+        </div>
+    </div>
+
+    <div class="github-clendar-div">
+        <div class="calendar-container">
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+            
+            <h2><img src="https://cdn.svgporn.com/logos/github.svg" alt=""></h2>
+        </div>
+    </div>
+
+
+    <!-- github Calender. -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
